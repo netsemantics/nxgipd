@@ -86,7 +86,7 @@ zone)
 
 
 # $MQTT_HOST is environment variable set in docker container
-  nohup mosquitto_pub -h $MQTT_HOST -t "alarm/zone/$lv_zone" -m "$lv_zone - $lv_msg" -q 1 &
+  nohup mosquitto_pub -h "mqtt.lan" -t "alarm/zone/$lv_zone" -m "$lv_zone - $lv_msg" -q 1 &
 
 ;;
 
